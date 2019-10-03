@@ -14,6 +14,7 @@ const dbOption = {
 // Option 1: Passing parameters separately
 const sequelize = new Sequelize(dbOption.database, dbOption.username, dbOption.password, {
   host: 'islamhaa.database.windows.net',
+  port:1433,
   dialect: 'mssql'   ,/* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */ 
   dialectOptions: {
     options: {
