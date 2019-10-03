@@ -6,7 +6,7 @@ const User = require('./models/user-model');
 
 //FeatureType.sync({force:true});
 //Feature.sync({force:true});
- //User.sync({force:true});
+ User.sync({force:true});
  //PLace.sync({force:true});
 //MasterCode.sync({force:true});
  //MasterCodeDetails.sync({force:true});
