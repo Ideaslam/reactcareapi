@@ -1,0 +1,24 @@
+{
+  "name": "reactcare",
+  "version": "1.0.0",
+  "description": "api to reactcare app for emergency ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ideaslam/reactcareapi.git"
+  },
+  "keywords": [
+    "care",
+    "emergency",
+    "health"
+  ],
+  "author": "Islam Hassan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ideaslam/reactcareapi/issues"
+  },
+  "homepage": "https://github.com/Ideaslam/reactcareapi#readme"
+}
