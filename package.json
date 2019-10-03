@@ -2,8 +2,9 @@
   "name": "reactcare",
   "version": "1.0.0",
   "description": "api to reactcare app for emergency ",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
+    "start": "node main.js",
     "test": "tape *.js",
     "watch": "npm-watch"
   },
