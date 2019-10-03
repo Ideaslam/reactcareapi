@@ -4,7 +4,8 @@
   "description": "api to reactcare app for emergency ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape *.js",
+    "watch": "npm-watch"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,21 @@
   "bugs": {
     "url": "https://github.com/Ideaslam/reactcareapi/issues"
   },
-  "homepage": "https://github.com/Ideaslam/reactcareapi#readme"
+  "homepage": "https://github.com/Ideaslam/reactcareapi#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mssql": "^5.1.0",
+    "npm-watch": "^0.6.0",
+    "path": "^0.12.7",
+    "sequelize": "^5.19.0",
+    "sequelize-cli": "^5.5.1",
+    "tape": "^4.11.0",
+    "tedious": "^6.4.0",
+    "typeorm": "^0.2.19"
+  }
 }
