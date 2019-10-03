@@ -1,6 +1,6 @@
 const Handler = require('./Handler');
 const User = require('../models/user-model');
-const bcrypt = require('bcrypt');
+//const bcrypt = require('bcrypt');
 const saltRounds = 10;
 //var Place = require('../models/place-model');
  var userHandler = {}
@@ -54,7 +54,7 @@ userHandler.Post = async function (data,callback) {
     // encrypt the password
     var hash ;
     if(data.passcode != undefined)
-    hash= bcrypt.hashSync(data.passcode, saltRounds);
+    hash=data.passcode;// bcrypt.hashSync(data.passcode, saltRounds);
     data.passcode= hash ;
  
      
@@ -71,7 +71,7 @@ userHandler.Put = async function (data,id,callback) {
       // encrypt the password
       var hash ;
       if(data.passcode != undefined)
-      hash= bcrypt.hashSync(data.passcode, saltRounds);
+      hash=data.passcode;// bcrypt.hashSync(data.passcode, saltRounds);
       data.passcode= hash ;
 
     Handler.Put(User ,data,{id:id},  function(result){
@@ -97,7 +97,7 @@ userHandler.authenticate = async function (username,password,callback) {
          
         if(result.status){
              
-            let res= bcrypt.compareSync(password, result.data[0].passcode);
+            let res= password; //bcrypt.compareSync(password, result.data[0].passcode);
          
                 
              if(result.data.length>0  && res){
