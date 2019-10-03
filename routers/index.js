@@ -7,6 +7,7 @@ const passport = require("../passport");
 var router = express.Router()
 
 
+router.get('/',(req,res)=>res.send('Hello World!'));
 router.use('/auth',auth);
 router.use('/user',passport,userRouter);
 

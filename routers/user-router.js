@@ -3,21 +3,32 @@ const userRouter = require("express").Router();
 var userHandler = require('../handlers/user-handler');
  
 
-userRouter.get('/',async (req,res)=> { 
+userRouter.get('/',async (req,res)=> {
+  try {
   userHandler.Get(function(users){ 
            res.send(users);
       }) ;
+
+    }catch(e){
+      res.send('error');
+     }
 
 });
 
 
 
 userRouter.get('/:userid',async (req,res)=> {
-  var user_id = req.params.userid;
+
+  try {
+    var user_id = req.params.userid;
   
-  userHandler.GetOne(user_id,function(user){
-  res.send(user);
-  }) ;
+    userHandler.GetOne(user_id,function(user){
+    res.send(user);
+    }) ;
+  }catch(e){
+   res.send('error');
+  }
+
 
 });
  

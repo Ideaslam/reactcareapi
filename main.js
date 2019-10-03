@@ -13,9 +13,10 @@ const app = express();
 
  
 
-const APP_PORT =3264 ;
+var APP_PORT =process.env.PORT|| 3300 ;
+console.log(APP_PORT);
 app.listen(APP_PORT, () => {
-    console.log("CONNECTED TO SERVER ON PORT 3264");
+    console.log("CONNECTED TO SERVER ON PORT "+APP_PORT);
 });
 app.use(bodyParser.json({ limit:'50mb' })); 
 app.use(bodyParser.urlencoded({ extended: true,limit: '50mb',parameterLimit:50000 }));

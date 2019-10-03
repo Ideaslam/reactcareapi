@@ -29,11 +29,13 @@ const saltRounds = 10;
     // User.sync({ force: false }).then(() => {
         
     //   });
- 
-         Handler.Get(User,User.attr() ,{}, [], function(result){   
+  
+    Handler.Get(User,User.attr() ,{}, [], function(result){   
          
         callback(result);      
     });
+ 
+      
      
 }
 

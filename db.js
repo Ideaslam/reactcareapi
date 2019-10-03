@@ -4,17 +4,22 @@ const Sequelize = require('sequelize');
 
 const dbOption = {
   
-    username: 'sa',
-    password: '05510551',
-    database: 'hafez',
+    username: 'islamhaa',
+    password: 'Face2010?',
+    database: 'reactcare',
 
 }
 
 
 // Option 1: Passing parameters separately
 const sequelize = new Sequelize(dbOption.database, dbOption.username, dbOption.password, {
-  host: 'localhost',
-  dialect: 'mssql'/* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */
+  host: 'islamhaa.database.windows.net',
+  dialect: 'mssql'   ,/* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */ 
+  dialectOptions: {
+    options: {
+        encrypt: true,
+    }
+}
 });
 
 
