@@ -37,6 +37,6 @@
     "sequelize-cli": "^5.5.1",
     "tape": "^4.11.0",
     "tedious": "^6.4.0",
-    "typeorm": "^0.2.19"
+    "typeorm": "^0.2.25"
   }
 }
